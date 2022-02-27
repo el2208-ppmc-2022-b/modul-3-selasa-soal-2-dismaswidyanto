@@ -13,14 +13,39 @@
 
 // Fungsi untuk menentukan index awal
 void check_start(char *str, char *start, int *start_idx) {
-	// Tuliskan implementasi fungsi check_start disini
+	int i, j, found;
 	
+	for (i = 0; i < strlen(str); i++) {
+		if (str[i] == start[0]) {
+			found = 1;
+			for (j = 1; j < strlen(start); j++) {
+				if (str[i+j] != start[j])
+					found = 0;
+			}
+			if (found) {
+				*start_idx = i;
+				return;
+			}
+		}
+	}
 }
 
 // Fungsi untuk menentukan index akhir
 void check_end(char *str, char *end, int *end_idx) {
-	// Tuliskan implementasi fungsi check_end disini
-
+	int i, j, found;
+	for (i = strlen(str); i >= 0 ; i--) {
+		if (str[i] == end[0]) {
+			found = 1;
+			for (j = 1; j < strlen(end); j++) {
+				if (str[i+j] != end[j])
+					found = 0;
+			}
+			if (found) {
+				*end_idx = i + strlen(end) - 1;
+				return;
+			}
+		}
+	}
 }
 
 int main() {
@@ -35,15 +60,14 @@ int main() {
 	printf("Masukkan akhiran: ");
 	scanf("%[^\n]%*c", end);
 	
-	// Tentukan index awal dan akhir memanggil fungsi check_start dan check_end
+	// Tentukan index awal dan akhir menggunakan fungsi check_start dan check_end
 	check_start(str, start, &start_idx);
 	check_end(str, end, &end_idx);
 	
 	// Print output
 	printf("Substring hasil: ");
-	for (i = start_idx; i <= end_idx; i++){
+	for (i = start_idx; i <= end_idx; i++)
 		printf("%c", str[i]);
-	}
 	
 	return 0;
 }
