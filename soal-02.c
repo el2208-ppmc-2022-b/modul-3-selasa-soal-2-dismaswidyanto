@@ -67,6 +67,9 @@ int main() {
 	check_start(str, start, &start_idx);
 	check_end(str, end, &end_idx);
 	
+	printf("%d",start_idx);
+	printf("%d",end_idx);
+	
 	// Print output
 	printf("Substring hasil: ");
 	for (i = start_idx; i <= end_idx; i++)
