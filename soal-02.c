@@ -23,10 +23,11 @@ void check_start(char *str, char *start, int *start_idx) {
 				if (str[i+j] != start[j])
 					found = 0;
 			}
+			printf("%d\n",found);
 			if (found) {
-				printf("%d\n",i);
+				printf("start %d\n",i);
 				*start_idx = i;
-				printf("%d\n",*start_idx);
+				printf("start %d\n",*start_idx);
 				return;
 			}
 		}
@@ -43,10 +44,11 @@ void check_end(char *str, char *end, int *end_idx) {
 				if (str[i+j] != end[j])
 					found = 0;
 			}
+			printf("%d\n",found);
 			if (found) {
-				printf("%d\n",i);
+				printf("end %d\n",i);
 				*end_idx = i + strlen(end) - 1;
-				printf("%d\n",*end_idx);
+				printf("end %d\n",*end_idx);
 				return;
 			}
 		}
