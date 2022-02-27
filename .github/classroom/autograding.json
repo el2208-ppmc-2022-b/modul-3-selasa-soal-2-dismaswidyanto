@@ -25,7 +25,7 @@
       "setup": "make soal-02",
       "run": "./soal-02",
       "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nm\r\nm",
-      "output": "",
+      "output": "mengerjakan modul 3 Praktikum Pem",
       "comparison": "included",
       "timeout": 1,
       "points": 10
@@ -35,7 +35,7 @@
       "setup": "make soal-02",
       "run": "./soal-02",
       "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nme\r\n3",
-      "output": "mengerjakan modul 3 Praktikum Pem",
+      "output": "mengerjakan modul 3",
       "comparison": "included",
       "timeout": 1,
       "points": 10
