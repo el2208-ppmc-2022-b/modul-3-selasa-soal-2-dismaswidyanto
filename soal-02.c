@@ -24,6 +24,7 @@ void check_start(char *str, char *start, int *start_idx) {
 					found = 0;
 			}
 			if (found) {
+				printf("%d\n",i);
 				*start_idx = i;
 				return;
 			}
@@ -42,6 +43,7 @@ void check_end(char *str, char *end, int *end_idx) {
 					found = 0;
 			}
 			if (found) {
+				printf("%d\n",i);
 				*end_idx = i + strlen(end) - 1;
 				return;
 			}
