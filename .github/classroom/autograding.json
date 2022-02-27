@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\ns\r\nh",
+      "output": "sedang mengerjakan modul 3 Praktikum Pemecahan Masalah",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\ns\r\ns",
+      "output": "sedang mengerjakan Modul 3 Praktikum Pemecahan Mas",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nm\r\nm",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nme\r\n3",
+      "output": "mengerjakan modul 3 Praktikum Pem",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nSaya\r\ndengan C",
+      "output": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "6",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nmod\r\nhan",
+      "output": "modul 3 Praktikum Pemecahan",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "7",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nsedang\r\ndengan",
+      "output": "sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "8",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nmengerjakan modul\r\ndengan C",
+      "output": "mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "9",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nSaya sedang mengerjakan modul 3\r\nPraktikum Pemecahan Masalah dengan C",
+      "output": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "make soal-02",
+      "run": "./soal-02",
+      "input": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nSaya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C\r\nSaya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C",
+      "output": "Saya sedang mengerjakan modul 3 Praktikum Pemecahan Masalah dengan C",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
