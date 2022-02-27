@@ -19,9 +19,11 @@ void check_start(char *str, char *start, int *start_idx) {
 	for (i = 0; i < strlen(str); i++) {
 		if (str[i] == start[0]) {
 			found = 1;
+			printf("start %d %c %c\n",i,str[i],start[0]);
 			for (j = 1; j < strlen(start); j++) {
-				if (str[i+j] != start[j])
+				if (str[i+j] != start[j]){
 					found = 0;
+				}
 			}
 			printf("%d\n",found);
 			if (found) {
@@ -41,8 +43,9 @@ void check_end(char *str, char *end, int *end_idx) {
 		if (str[i] == end[0]) {
 			found = 1;
 			for (j = 1; j < strlen(end); j++) {
-				if (str[i+j] != end[j])
+				if (str[i+j] != end[j]){
 					found = 0;
+				}
 			}
 			printf("%d\n",found);
 			if (found) {
