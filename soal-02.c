@@ -12,27 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Fungsi untuk menentukan index awal
-void check_start(char *str, char *start, int *start_idx) {
-	int i, j, found;
-	
-	for (i = 0; i < strlen(str); i++) {
-		if (str[i] == start[0]) {
-			found = 1;
-			for (j = 1; j < strlen(start); j++) {
-				if (str[i+j] != start[j])
-					found = 0;
-			}
-			printf("%d\n",found);
-			if (found) {
-				printf("start %d\n",i);
-				*start_idx = i;
-				printf("start %d\n",*start_idx);
-				return;
-			}
-		}
-	}
-}
+
 
 // Fungsi untuk menentukan index akhir
 void check_end(char *str, char *end, int *end_idx) {
@@ -54,7 +34,27 @@ void check_end(char *str, char *end, int *end_idx) {
 		}
 	}
 }
-
+// Fungsi untuk menentukan index awal
+void check_start(char *str, char *start, int *start_idx) {
+	int i, j, found;
+	
+	for (i = 0; i < strlen(str); i++) {
+		if (str[i] == start[0]) {
+			found = 1;
+			for (j = 1; j < strlen(start); j++) {
+				if (str[i+j] != start[j])
+					found = 0;
+			}
+			printf("%d\n",found);
+			if (found) {
+				printf("start %d\n",i);
+				*start_idx = i;
+				printf("start %d\n",*start_idx);
+				return;
+			}
+		}
+	}
+}
 int main() {
 	char str[128], start[128], end[128];
 	int start_idx, end_idx, i;
