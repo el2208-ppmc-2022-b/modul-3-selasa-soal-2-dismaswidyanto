@@ -9,6 +9,7 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 // Fungsi untuk menentukan index awal
@@ -59,16 +60,10 @@ int main() {
 	scanf("%[^\n]%*c", start);
 	printf("Masukkan akhiran: ");
 	scanf("%[^\n]%*c", end);
-	printf("%s",str);
-	printf("%s",start);
-	printf("%s",end);
 	
 	// Tentukan index awal dan akhir menggunakan fungsi check_start dan check_end
 	check_start(str, start, &start_idx);
 	check_end(str, end, &end_idx);
-	
-	printf("%d",start_idx);
-	printf("%d",end_idx);
 	
 	// Print output
 	printf("Substring hasil: ");
