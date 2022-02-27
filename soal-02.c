@@ -69,7 +69,7 @@ int main() {
 	
 	// Tentukan index awal dan akhir menggunakan fungsi check_start dan check_end
 	check_start(str, start, &start_idx);
-	check_end(str, end, &end_idx);
+	//check_end(str, end, &end_idx);
 	
 	// Print output
 	printf("Substring hasil: ");
