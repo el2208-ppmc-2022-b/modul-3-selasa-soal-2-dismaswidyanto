@@ -35,25 +35,25 @@ void check_start(char *str, char *start, int *start_idx) {
 }
 
 // Fungsi untuk menentukan index akhir
-void check_end(char *str, char *end, int *end_idx) {
-	int i, j, found;
-	for (i = strlen(str); i >= 0 ; i--) {
-		if (str[i] == end[0]) {
-			found = 1;
-			for (j = 1; j < strlen(end); j++) {
-				if (str[i+j] != end[j])
-					found = 0;
-			}
-			printf("%d\n",found);
-			if (found) {
-				printf("end %d\n",i);
-				*end_idx = i + strlen(end) - 1;
-				printf("end %d\n",*end_idx);
-				return;
-			}
-		}
-	}
-}
+//void check_end(char *str, char *end, int *end_idx) {
+//	int i, j, found;
+//	for (i = strlen(str); i >= 0 ; i--) {
+//		if (str[i] == end[0]) {
+//			found = 1;
+//			for (j = 1; j < strlen(end); j++) {
+//				if (str[i+j] != end[j])
+//					found = 0;
+//			}
+//			printf("%d\n",found);
+//			if (found) {
+//				printf("end %d\n",i);
+//				*end_idx = i + strlen(end) - 1;
+//				printf("end %d\n",*end_idx);
+//				return;
+//			}
+//		}
+//	}
+//}
 
 int main() {
 	char str[128], start[128], end[128];
