@@ -19,8 +19,8 @@ void check_start(char *str, char *start, int *start_idx) {
 	for (i = 0; i < strlen(str); i++) {
 		if (str[i] == start[0]) {
 			found = 1;
-			printf("start %d %c %c %d\n",i,str[i],start[0],strlen(start));
-			for (j = 1; j < strlen(start); j++) {
+			//printf("start %d %c %c %d\n",i,str[i],start[0],strlen(start));
+			for (j = 1; j < strlen(start)-1; j++) {
 				if (str[i+j] != start[j]){
 					found = 0;
 				}
